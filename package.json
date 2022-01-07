@@ -12,7 +12,10 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^6.0.2",
-    "express-handlebars-sections": "^1.0.1"
+    "express-handlebars-sections": "^1.0.1",
+    "multer": "^1.4.4",
+    "numeral": "^2.0.6",
+    "pg-promise": "^10.11.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

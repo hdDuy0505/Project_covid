@@ -141,6 +141,15 @@ ul.CTAs {
     background: linear-gradient(-135deg, #c850c0, #4158d0);
 }
 
+.edit-card{
+    border-radius: 10px;
+}
+
+.edit-image{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */

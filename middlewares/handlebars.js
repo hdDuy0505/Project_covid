@@ -1,5 +1,6 @@
 const exphds = require('express-handlebars');
 const exphbs_sections = require('express-handlebars-sections');
+const numeral = require('numeral');
 
 module.exports = app =>{
     const hbs = exphds.create({
@@ -12,6 +13,9 @@ module.exports = app =>{
           }
           return options.inverse(this);
         },
+        format_number: function(value){
+          return numeral(parseInt(value)).format('0,0');
+        }
       },
     });
     exphbs_sections(hbs);

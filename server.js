@@ -9,7 +9,7 @@ app.use(express.urlencoded({
     extended: true,
 }));
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(express.static(path.join(__dirname, 'images')));
 app.use('/', require('./controllers/home.C'));
 app.use('/admin', require('./controllers/admin/main.C'));
 app.use('/manager', require('./controllers/manager/main.C'));
